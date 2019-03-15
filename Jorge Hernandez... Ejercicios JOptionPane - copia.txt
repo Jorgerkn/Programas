@@ -1,0 +1,649 @@
+package ejercicios.pkgfor.ForJOption;
+import javax.swing.JOptionPane;
+/**
+ *
+ * @author JORGE
+ */
+public class Ejercicio1ForJOption {
+     public static void main(String[] args) {
+         
+         for(int num=1;num<=100;num++){
+            JOptionPane.showMessageDialog(null, (num));
+            
+            }
+         
+     }
+}
+
+///////////////////////////////////////////////////////////////////////
+
+package ejercicios.pkgfor.ForJOption;
+import javax.swing.JOptionPane;
+/**
+ *
+ * @author JORGE
+ */
+public class For2JOption {
+    public static void main(String[] args) {
+        
+         for(int num=0;num<=100;num=num+2){
+            JOptionPane.showMessageDialog(null, (num));
+        }
+        
+        
+    }
+}
+
+//////////////////////////////////////////////////////////////////////
+
+package ejercicios.pkgfor.ForJOption;
+import javax.swing.JOptionPane;
+/**
+ *
+ * @author JORGE
+ */
+public class For3JOption {
+    public static void main(String[] args) {
+        
+        for(int num=5;num<=100;num=num+5){
+            JOptionPane.showMessageDialog(null,(num));
+        }
+        
+    }
+}
+
+//////////////////////////////////////////////////////////////////
+
+package ejercicios.pkgfor.ForJOption;
+import javax.swing.JOptionPane;
+/**
+ *
+ * @author JORGE
+ */
+public class For4JOption {
+    public static void main(String[] args){
+        
+        int num;
+        String num01;
+        
+        num01 = JOptionPane.showInputDialog(null,"Ingrese Numero");
+        num = Integer.parseInt(num01);
+        
+       
+        JOptionPane.showMessageDialog(null,"Inicio");
+        for( num=num;num<=500;num=num+2){       
+            JOptionPane.showMessageDialog(null,(num));
+        }
+        
+    }
+}
+
+////////////////////////////////////////////////////////////////////////
+
+package ejercicios.pkgfor.ForJOption;
+import javax.swing.JOptionPane;
+/**
+ *
+ * @author JORGE
+ */
+public class For5JOption {
+    public static void main(String[] args){
+        
+        int tab;
+        String tab01;
+        
+        tab01 = JOptionPane.showInputDialog(null, "Ingrese Numero de tabla");
+        tab = Integer.parseInt(tab01);
+        
+        for(int i=1;i<=1;i++){
+            for(int j=1;j<=10;j++){
+                
+            JOptionPane.showMessageDialog(null, tab + "x" + j + "=" + tab*j);
+            
+           }
+        }
+        
+    }
+}
+
+/////////////////////////////////////////////////////////////////////////////////
+
+package tablas.de.multiplicar.JOption;
+import javax.swing.JOptionPane;
+/**
+ *
+ * @author JORGE
+ */
+public class TablasJOption {
+    public static void main(String[] args) {
+        
+        int a=1,b=0,c=0;
+         
+         JOptionPane.showMessageDialog(null, "TABLAS DE MULTIPLICAR");
+          
+         while(a<=10){
+             JOptionPane.showMessageDialog(null, "            TABLA DEL "+a);
+             b=1;
+             while(b<=10){
+                 c=(a*b);
+                 JOptionPane.showMessageDialog(null, a + "x" + b + "=" + c, "Tabla del "+a, JOptionPane.INFORMATION_MESSAGE);
+                 b++;
+             }
+             a++;
+         }
+        
+    }
+}
+
+/////////////////////////////////////////////////////////////////////////////
+
+package tarea.de.notas.JOption;
+import javax.swing.JOptionPane;
+/**
+ *
+ * @author JORGE
+ */
+public class tareanotasjoption {
+    public static void main(String[] args) {
+        
+        double n1;
+        String n01;
+        
+        n01 = JOptionPane.showInputDialog(null, "Ingrese la Nota ");
+        n1 = Double.parseDouble(n01);
+        
+        while(n1>10){
+        n01 = JOptionPane.showInputDialog(null, "Error Nota Mayor a 10 \nVuelva a ingresar la nota:  ");
+         n1 = Double.parseDouble(n01);
+        }
+        
+        if(n1>=9){
+            JOptionPane.showMessageDialog(null, "La calificacion es:  A ");
+        }
+        if((n1>=8)&&(n1<9)){
+            JOptionPane.showMessageDialog(null, "La calificacion es:  B ");
+        }
+        if((n1>=7)&&(n1<8)){
+            JOptionPane.showMessageDialog(null, "La calificacion es:  C ");
+        }
+        if(n1<7){
+            JOptionPane.showMessageDialog(null, "La calificacion es:  D ");
+        }
+        
+        
+    }
+}
+
+/////////////////////////////////////////////////////////////
+
+package SwingCifras;
+import javax.swing.JOptionPane;
+/**
+ *
+ * @author CC3B
+ */
+public class cifras {
+     public static void main(String args[]){
+         
+         String numm;
+         int num;
+         numm = JOptionPane.showInputDialog(null, "Introduzca numero "
+                , "ingrese numero ");
+          num=Integer.parseInt(numm);
+          
+          if(num>=0&&num<=10){
+              JOptionPane.showMessageDialog(null, "Su numero es de una cifra");
+          }
+          
+          else if(num>=10&&num<=100){
+              JOptionPane.showMessageDialog(null, "Su numero es de dos cifras");
+          }
+          
+          
+     }
+    
+}
+
+//////////////////////////////////////////////////////////////////////////////
+
+package ejercicio.pkg1.EjerciciosSwing;
+import javax.swing.JOptionPane;
+/**
+ *
+ * @author CC3B
+ */
+public class Ejericicio1JOption {
+    public static void main(String args[]){
+        
+        String precio1;
+        double precio=0, compra, porcentaje;
+        
+        precio1 = JOptionPane.showInputDialog("Ingrese el costo de su compra");
+        precio = Double.parseDouble(precio1);
+        
+        if(precio>=150){
+            porcentaje=precio*0.20;
+            precio=precio-porcentaje;
+            
+        JOptionPane.showMessageDialog(null, "Felicidades aplica a descuento\nEl costo de su compra es: "+precio);
+        }
+        else{
+            
+        JOptionPane.showMessageDialog(null, "No aplica descuento\nEl costo de su compra es: "+precio);
+        }
+    }
+}
+
+////////////////////////////////////////////////////////////////////////////////
+
+package ejercicio.pkg1.EjerciciosSwing;
+import javax.swing.JOptionPane;
+/**
+ *
+ * @author CC3B
+ */
+public class Ejercicio2 {
+    public static void main(String args[]){
+        
+        String hora01;
+        int hora, horaex;
+        double sueldo,suelhorapri,suelhoraex;
+        
+        
+      hora01 = JOptionPane.showInputDialog("Ingrese las horas trabajadas");
+      hora =Integer.parseInt(hora01);
+       
+       if(hora<=40){
+            sueldo=hora*10;
+            
+        JOptionPane.showMessageDialog(null, "Su sueldo es de: "+sueldo);
+        }
+       
+        if(hora>40){
+            horaex=(hora-40);
+            suelhoraex=horaex*15;
+            suelhorapri=40*10;
+            sueldo=suelhorapri+suelhoraex;
+            
+        JOptionPane.showMessageDialog(null, "Su sueldo es de: "+sueldo);
+        
+        }
+    
+    }
+}
+
+/////////////////////////////////////////////////////////////////////
+
+package ejercicio.pkg1.EjerciciosSwing;
+import javax.swing.JOptionPane;
+/**
+ *
+ * @author CC3B
+ */
+public class Ejercicio3JOption {
+    public static void main(String args[]){
+        
+        String n11,n22,n33,n44,n55;
+        double n1,n2,n3,n4,n5;
+        
+        n11 = JOptionPane.showInputDialog("Ingrese la nota 1"
+        , "Nota 1");
+        n1 = Double.parseDouble(n11);
+        
+        n22 = JOptionPane.showInputDialog("Ingrese la nota 2"
+        , "Nota 2");
+        n2 = Double.parseDouble(n22);
+        
+        n33 = JOptionPane.showInputDialog("Ingrese la nota 3"
+        , "Nota 3");
+        n3 = Double.parseDouble(n33);
+        
+        n44 = JOptionPane.showInputDialog("Ingrese la nota 4"
+        , "Nota 4");
+        n4 = Double.parseDouble(n44);
+        
+        n55 = JOptionPane.showInputDialog("Ingrese la nota 5"
+        , "Nota 5");
+        n5 = Double.parseDouble(n55);
+        
+        
+        if(n1>n2&&n1>n3&&n1>n4&&n1>n5){
+            JOptionPane.showMessageDialog(null, "La mayor nota es nota 1: "+n1, "Mayor Nota", JOptionPane.PLAIN_MESSAGE);
+        }
+         if(n2>n1&&n2>n3&&n2>n4&&n2>n5){
+            JOptionPane.showMessageDialog(null, "La mayor nota es nota 2: "+n2, "Mayor Nota", JOptionPane.PLAIN_MESSAGE);
+        }
+          if(n3>n2&&n3>n1&&n3>n4&&n3>n5){
+            JOptionPane.showMessageDialog(null, "La mayor nota es nota 3: "+n3, "Mayor Nota", JOptionPane.PLAIN_MESSAGE);
+        }
+           if(n4>n2&&n4>n3&&n4>n1&&n4>n5){
+            JOptionPane.showMessageDialog(null, "La mayor nota es nota 4: "+n4, "Mayor Nota", JOptionPane.PLAIN_MESSAGE);
+        }
+            if(n5>n2&&n5>n3&&n5>n4&&n5>n1){
+            JOptionPane.showMessageDialog(null, "La mayor nota es nota 5: "+n5, "Mayor Nota", JOptionPane.PLAIN_MESSAGE);
+        }
+        
+    }
+}
+
+////////////////////////////////////////////////////////////////////////////////////////
+
+package ejercicio.pkg1.EjerciciosSwing;
+import javax.swing.JOptionPane;
+/**
+ *
+ * @author CC3B
+ */
+public class Ejercicio4JOption {
+    public static void main(String args[]){
+        
+        double luz=50,agua=20,colegiatura=55,porccolegio,pagocolegio,pago;
+        int hijos;
+        String hijos01;
+        
+        JOptionPane.showMessageDialog(null,"Pago de agua = $50"
+        +"\nPago de luz electrica = $20"
+        +"\nPago de colegio = $55", "Informacion de Pago", JOptionPane.PLAIN_MESSAGE);
+        
+        hijos01 = JOptionPane.showInputDialog(null, "Ingrese la cantidad de hijos estudiando: ");
+        hijos=Integer.parseInt(hijos01);
+        
+        porccolegio=colegiatura*0.50;
+        
+        if(hijos>=5){
+            pagocolegio=porccolegio*hijos;
+            pago=pagocolegio+luz+agua;
+            
+        JOptionPane.showMessageDialog(null,"El pago al mes es de: "+pago, "Pago Mes", JOptionPane.PLAIN_MESSAGE);
+        }
+        else{
+            pagocolegio=colegiatura*hijos;
+            pago=pagocolegio+luz+agua;
+            
+            JOptionPane.showMessageDialog(null,"El pago al mes es de: "+pago, "Pago Mes", JOptionPane.PLAIN_MESSAGE);
+        }
+        
+    }
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////
+
+package ejercicio1.c.EjericioJOption;
+import javax.swing.JOptionPane;
+/**
+ *
+ * @author CC3B
+ */
+public class Ejercicio1JOptionpane {
+    public static void main(String args[]){
+        
+        int var=1;
+        
+        while(var<=100){
+            JOptionPane.showMessageDialog(null, " iterado "+var+" veces ");
+            var++;
+        }
+    }
+}
+
+/////////////////////////////////////////////////////////////////////////////////////
+
+package nota.pkgif.NotaJOption;
+import javax.swing.JOptionPane;
+/**
+ *
+ * @author CC3B
+ */
+public class NotaJOptionPane {
+    public static void main(String args[]){
+        
+        int n1;
+        String n01;
+        
+        n01 = JOptionPane.showInputDialog(null,"Introduce nota");
+        n1=Integer.parseInt(n01);
+        
+        if(n1>=7){
+            JOptionPane.showMessageDialog(null,"Aprobado");
+        }
+        else{
+            JOptionPane.showMessageDialog(null,"Reprobado");
+        }
+    }
+}
+
+//////////////////////////////////////////////////////////////////
+
+package p2019.p2019JOption;
+import javax.swing.JOptionPane;
+/**
+ *
+ * @author CC3B
+ */
+public class p2019JOptionPane {
+    public static void main(String args[]){
+        
+        int n1, n2;
+        String n01, n02;
+        
+        n01 = JOptionPane.showInputDialog(null,"Introduce primer valor");
+        
+        n02 = JOptionPane.showInputDialog(null,"Introduce segundo valor");
+        
+        n1=Integer.parseInt(n01);
+        n2=Integer.parseInt(n02);
+        
+        JOptionPane.showMessageDialog(null,"La suma de los valores ingresados es: "+ (n1+n2)
+                + "\nLa resta es:" +(n1-n2)
+                +"\nLa multiplicacion es:" + (n1*n2)
+                + "\nLa division es:" +(n1/n2));
+        
+    }
+}
+
+///////////////////////////////////////////////////////////////////
+
+package primer.ejercicio.PrimerejercicioJOption;
+import javax.swing.JOptionPane;
+/**
+ *
+ * @author CC3B
+ */
+public class PrimerejercicioJOptionpane {
+    public static void main(String args[]){
+        
+        JOptionPane.showMessageDialog(null,"Hola Mundo");
+        
+        
+        
+    }
+}
+
+/////////////////////////////////////////////////////////////////
+
+package promedio.JOption;
+import javax.swing.JOptionPane;
+/**
+ *
+ * @author CC3B
+ */
+public class PromedioJOptionPane {
+    public static void main(String args[]){
+        
+        
+        double l1,l2,l3;
+        double p1,p2,p3;
+        String l01,l02,l03,p01,p02,p03;
+        double promedio;
+        double nota1,nota2,nota3;
+        double por1,por2,por3,por4,por5,por6;
+        
+        l01 = JOptionPane.showInputDialog(null,"Ingrese la nota del Laboratorio 1");
+        l1=Double.parseDouble(l01);
+        por1=l1*0.40;
+        
+        p01 = JOptionPane.showInputDialog(null,"Ingrese la nota del Parcial 1");
+        p1=Double.parseDouble(p01);
+        por2=p1*0.60;
+        
+        nota1=l1+p1;
+        
+        l02 = JOptionPane.showInputDialog(null,"Ingrese la nota del Laboratorio 2");
+        l2=Double.parseDouble(l02);
+        por3=l2*0.40;
+        
+        p02 = JOptionPane.showInputDialog(null,"Ingrese la nota del Parcial 2");
+        p2=Double.parseDouble(p02);
+        por4 =p2*0.60;
+        
+        nota2=l2+p2;
+       
+        l03 = JOptionPane.showInputDialog(null,"Ingrese la nota del Laboratorio 3");
+        l3=Double.parseDouble(l03);
+        por5=l3*0.40;
+       
+        p03 = JOptionPane.showInputDialog(null,"Ingrese la nota del Parcial 3");
+        p3=Double.parseDouble(p03);
+        por6=p3*0.60;
+        
+        nota3=l3+p3;
+        
+        promedio=(nota1+nota2+nota3)/6;
+        
+        if(promedio>=7&&promedio<=10){
+          JOptionPane.showMessageDialog(null, "Promedio"+promedio
+                  +"\nAprobado");
+        }
+        else{
+          JOptionPane.showMessageDialog(null, "Promedio"+promedio
+                  +"\nReprobado");
+        }
+    }
+}
+
+/////////////////////////////////////////////////////////////////////////////////
+
+package usuario.contra.JOptionpane;
+import javax.swing.JOptionPane;
+/**
+ *
+ * @author CC3B
+ */
+public class UsuariocontraJOptionpane {
+    public static void main(String args[]){
+        
+        String Nombre;
+        String Contra="1234";
+        String Contrause;
+        
+        Nombre = JOptionPane.showInputDialog(null,"Ingrese el Nombre de Usuario");
+     
+        JOptionPane.showMessageDialog(null,"Contraseña = 1234");
+        
+        Contrause = JOptionPane.showInputDialog(null,"Ingrese la contraseña");
+        
+        if(Contrause.equals(Contra)){
+            JOptionPane.showMessageDialog(null,"Bienvenido " + (Nombre));
+        }
+        else{
+           JOptionPane.showMessageDialog(null,"Error Contraseña");
+        }
+        
+        
+    }
+}
+
+//////////////////////////////////////////////////////////////////////////
+
+package pkgwhile.pkg1.Joption;
+import javax.swing.JOptionPane;
+/**
+ *
+ * @author CC3B
+ */
+public class Ejercicio3JOption {
+    public static void main(String args[]){
+        
+        int n;
+        int i;
+        String n01;
+        
+        
+        n01 = JOptionPane.showInputDialog(null,"Ingrese numero");
+        n=Integer.parseInt(n01);
+        
+         i=1;
+    
+        while(i<=10){
+            JOptionPane.showMessageDialog(null,n + "x" + i + " = " + n*i);
+            i++;
+        }
+        
+    }
+}
+
+////////////////////////////////////////////////////////////////////////
+
+package pkgwhile.pkg1.Joption;
+import javax.swing.JOptionPane;
+/**
+ *
+ * @author CC3B
+ */
+public class Ejercicio4JOption {
+    public static void main(String args[]){
+        
+        int n;
+        int m;
+        int mm, t;
+
+        JOptionPane.showMessageDialog(null,"TABLAS DE MULTIPLICAR");
+
+        m=1;
+        n=2;
+        t=2;
+        
+        for(t=0;t<=10;t++){
+        for(mm=0;mm<=10;mm++){
+         while(m<=10){
+             JOptionPane.showMessageDialog(null,n + "x" + m + " = " + n*m); 
+              m++;
+            }
+         n++;
+        }
+        }
+
+        
+    }
+}
+
+//////////////////////////////////////////////////////////////////////
+
+package pkgwhile.pkg2.JOption;
+import javax.swing.JOptionPane;
+/**
+ *
+ * @author CC3B
+ */
+public class While2JOption {
+    public static void main(String args[]){
+        
+        int contador;
+        int fin;
+        String contador01, fin01;
+        
+        contador01 = JOptionPane.showInputDialog(null,"Ingrese el valor inicial");
+        contador = Integer.parseInt(contador01);
+         
+         fin01= JOptionPane.showInputDialog(null,"Ingrese el valor final");
+         fin = Integer.parseInt(fin01);
+         
+         while(contador<=fin){
+             
+            JOptionPane.showMessageDialog(null,"Valor actual  "+contador);
+            contador++;
+         }
+    }
+}
+
+
